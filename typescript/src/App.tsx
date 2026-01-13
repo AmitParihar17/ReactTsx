@@ -2,7 +2,14 @@
 // import Person from "./components/Person"
 // import { PersonList } from "./components/PersonList";
 
-import { Status } from "./components/Status"
+import Button from "./components/Button"
+import Container from "./components/Container";
+import Input from "./components/Input";
+
+// import { Greet } from "./components/Greet";
+// import Heading from "./components/Heading"
+// import Oscar from "./components/Oscar"
+// import { Status } from "./components/Status"
 
 //  const App = () => {
 //    const personName = {
@@ -38,12 +45,34 @@ import { Status } from "./components/Status"
 
 
 
+// export const App = () => {
+//   return (
+//     <div>
+//       <Status status="success" />
+//       <Heading>Placeholder text</Heading>
+//       <Oscar>
+//         <Heading>Oscar goes to amit parihar</Heading>
+//       </Oscar>
+//       <Greet name="Amit"   isLoggedIn={false}/>
+//     </div>
+//   );
+// }
+
+
+
 export const App = () => {
   return (
     <div>
-      <Status  status="success" />
+      <Button  handleClick={(event,id) => {
+      console.log('Button Clicked',event,id);   
+      }}/>
+      <Input  value="" handleChange={(event) => console.log(event)}/>
+      <Container styles={{border : "2px solid red",padding : "1rem"}} />
     </div>
   )
 }
+
+
+
 
 
