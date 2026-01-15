@@ -2,9 +2,15 @@
 // import Person from "./components/Person"
 // import { PersonList } from "./components/PersonList";
 
-import Button from "./components/Button"
-import Container from "./components/Container";
-import Input from "./components/Input";
+// import Button from "./components/Button"
+// import Container from "./components/Container";
+// import Input from "./components/Input";
+
+// import { Box } from "./context/Box";
+// import { ThemeContextProvider } from "./context/ThemeContext";
+
+import User from "./context/User";
+import { UserContextProvider } from "./context/UserContext";
 
 // import { Greet } from "./components/Greet";
 // import Heading from "./components/Heading"
@@ -60,17 +66,43 @@ import Input from "./components/Input";
 
 
 
+// export const App = () => {
+//   return (
+//     <div>
+//       <Button  handleClick={(event,id) => {
+//       console.log('Button Clicked',event,id);   
+//       }}/>
+//       <Input  value="" handleChange={(event) => console.log(event)}/>
+//       <Container styles={{border : "2px solid red",padding : "1rem"}} />
+//     </div>
+//   )
+// }
+
+
+
+// export const App = () => {
+//   return (
+//     <div>
+//       <ThemeContextProvider>
+//         <Box />
+//       </ThemeContextProvider>
+//     </div>
+//   )
+// }
+
 export const App = () => {
   return (
     <div>
-      <Button  handleClick={(event,id) => {
-      console.log('Button Clicked',event,id);   
-      }}/>
-      <Input  value="" handleChange={(event) => console.log(event)}/>
-      <Container styles={{border : "2px solid red",padding : "1rem"}} />
+    <UserContextProvider>
+       <User />
+    </UserContextProvider>
+
+
     </div>
   )
 }
+
+
 
 
 
