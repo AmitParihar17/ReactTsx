@@ -2,6 +2,8 @@
 // import Person from "./components/Person"
 // import { PersonList } from "./components/PersonList";
 
+import MutableRef from "./components/ref/MutableRef"
+
 // import Button from "./components/Button"
 // import Container from "./components/Container";
 // import Input from "./components/Input";
@@ -9,8 +11,8 @@
 // import { Box } from "./context/Box";
 // import { ThemeContextProvider } from "./context/ThemeContext";
 
-import User from "./context/User";
-import { UserContextProvider } from "./context/UserContext";
+// import User from "./context/User";
+// import { UserContextProvider } from "./context/UserContext";
 
 // import { Greet } from "./components/Greet";
 // import Heading from "./components/Heading"
@@ -90,17 +92,29 @@ import { UserContextProvider } from "./context/UserContext";
 //   )
 // }
 
-export const App = () => {
+// export const App = () => {
+//   return (
+//     <div>
+//     <UserContextProvider>
+//        <User />
+//     </UserContextProvider>
+
+
+//     </div>
+//   )
+// }
+
+
+
+ export const App = () => {
   return (
     <div>
-    <UserContextProvider>
-       <User />
-    </UserContextProvider>
-
-
+      <MutableRef />
     </div>
   )
 }
+
+
 
 
 
