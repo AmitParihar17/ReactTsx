@@ -2,7 +2,9 @@
 // import Person from "./components/Person"
 // import { PersonList } from "./components/PersonList";
 
-import MutableRef from "./components/ref/MutableRef"
+import { List } from "./components/generic/List";
+
+// import MutableRef from "./components/ref/MutableRef"
 
 // import Button from "./components/Button"
 // import Container from "./components/Container";
@@ -35,7 +37,7 @@ import MutableRef from "./components/ref/MutableRef"
 //     {first : "aonu",
 //       last : "thakur"
 //     },
-   
+
 //    ]
 
 //    return (
@@ -47,11 +49,8 @@ import MutableRef from "./components/ref/MutableRef"
 //      </div>
 //    )
 //  }
- 
+
 //  export default App
- 
-
-
 
 // export const App = () => {
 //   return (
@@ -66,21 +65,17 @@ import MutableRef from "./components/ref/MutableRef"
 //   );
 // }
 
-
-
 // export const App = () => {
 //   return (
 //     <div>
 //       <Button  handleClick={(event,id) => {
-//       console.log('Button Clicked',event,id);   
+//       console.log('Button Clicked',event,id);
 //       }}/>
 //       <Input  value="" handleChange={(event) => console.log(event)}/>
 //       <Container styles={{border : "2px solid red",padding : "1rem"}} />
 //     </div>
 //   )
 // }
-
-
 
 // export const App = () => {
 //   return (
@@ -99,26 +94,48 @@ import MutableRef from "./components/ref/MutableRef"
 //        <User />
 //     </UserContextProvider>
 
-
 //     </div>
 //   )
 // }
 
+//  export const App = () => {
+//   return (
+//     <div>
+//       <MutableRef />
+//     </div>
+//   )
+// }
 
-
- export const App = () => {
+export const App = () => {
   return (
     <div>
-      <MutableRef />
+      {/* <List
+        items={["Batman", "Spiderman", "Shaktiman"]}
+        onClick={(item) => console.log(item)}
+      />
+
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
+
+      <List
+        items={[
+          {
+            id: 1,
+            first: "Amit",
+            last: "Parihar",
+          },
+          {
+            id: 2,
+            first: "Chirag",
+            last: "Parihar",
+          },
+          {
+            id: 3,
+            first: "jaya",
+            last: "Thakur",
+          },
+        ]}
+        onClick={(item) => console.log(item)}
+      />
     </div>
-  )
-}
-
-
-
-
-
-
-
-
-
+  );
+};
