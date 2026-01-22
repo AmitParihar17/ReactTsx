@@ -2,7 +2,9 @@
 // import Person from "./components/Person"
 // import { PersonList } from "./components/PersonList";
 
-import { List } from "./components/generic/List";
+import RandomNumber from "./restriction/RandomNumber"
+
+// import { List } from "./components/generic/List";
 
 // import MutableRef from "./components/ref/MutableRef"
 
@@ -106,36 +108,50 @@ import { List } from "./components/generic/List";
 //   )
 // }
 
+// export const App = () => {
+//   return (
+//     <div>
+//       {/* <List
+//         items={["Batman", "Spiderman", "Shaktiman"]}
+//         onClick={(item) => console.log(item)}
+//       />
+
+//       <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
+
+//       <List
+//         items={[
+//           {
+//             id: 1,
+//             first: "Amit",
+//             last: "Parihar",
+//           },
+//           {
+//             id: 2,
+//             first: "Chirag",
+//             last: "Parihar",
+//           },
+//           {
+//             id: 3,
+//             first: "jaya",
+//             last: "Thakur",
+//           },
+//         ]}
+//         onClick={(item) => console.log(item)}
+//       />
+//     </div>
+//   );
+// };
+
+
+
+
 export const App = () => {
   return (
     <div>
-      {/* <List
-        items={["Batman", "Spiderman", "Shaktiman"]}
-        onClick={(item) => console.log(item)}
-      />
-
-      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
-
-      <List
-        items={[
-          {
-            id: 1,
-            first: "Amit",
-            last: "Parihar",
-          },
-          {
-            id: 2,
-            first: "Chirag",
-            last: "Parihar",
-          },
-          {
-            id: 3,
-            first: "jaya",
-            last: "Thakur",
-          },
-        ]}
-        onClick={(item) => console.log(item)}
-      />
+      <RandomNumber value={2} isPositive />
     </div>
-  );
-};
+  )
+}
+
+
+
