@@ -2,7 +2,9 @@
 // import Person from "./components/Person"
 // import { PersonList } from "./components/PersonList";
 
-import RandomNumber from "./restriction/RandomNumber"
+import { Toast } from "./components/templateliterals/Toast"
+
+// import RandomNumber from "./restriction/RandomNumber"
 
 // import { List } from "./components/generic/List";
 
@@ -145,13 +147,26 @@ import RandomNumber from "./restriction/RandomNumber"
 
 
 
+// export const App = () => {
+//   return (
+//     <div>
+//       <RandomNumber value={2} isPositive />
+//     </div>
+//   )
+// }
+
+
+
 export const App = () => {
   return (
     <div>
-      <RandomNumber value={2} isPositive />
+      <Toast position="center" />
     </div>
   )
 }
+
+
+
 
 
 
