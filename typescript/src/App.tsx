@@ -2,7 +2,9 @@
 // import Person from "./components/Person"
 // import { PersonList } from "./components/PersonList";
 
-import { Toast } from "./components/templateliterals/Toast"
+import { Button } from "./components/html/button"
+
+// import { Toast } from "./components/templateliterals/Toast"
 
 // import RandomNumber from "./restriction/RandomNumber"
 
@@ -160,7 +162,8 @@ import { Toast } from "./components/templateliterals/Toast"
 export const App = () => {
   return (
     <div>
-      <Toast position="center" />
+      {/* <Toast position="center" /> */}
+      <Button variants="primary">Primary Button</Button>
     </div>
   )
 }
