@@ -1,6 +1,7 @@
 type buttonProps = {
-    variants : "primary" | "secondary"
-}&React.ComponentProps<'button'>
+    variants : "primary" | "secondary",
+    children : string,
+}&Omit<React.ComponentProps<'button'>,"children">
 
 export const Button = ({variants,children,...rest} : buttonProps) => {
   return (
