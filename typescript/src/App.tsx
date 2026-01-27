@@ -163,9 +163,11 @@ export const App = () => {
   return (
     <div>
       {/* <Toast position="center" /> */}
-      <Button variants="primary">Primary Button</Button>
+      <Button variants="primary">
+        Primary Button
+      </Button>
     </div>
-  )
+  );
 }
 
 
