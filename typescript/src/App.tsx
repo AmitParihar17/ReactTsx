@@ -2,7 +2,9 @@
 // import Person from "./components/Person"
 // import { PersonList } from "./components/PersonList";
 
-import { Button } from "./components/html/button"
+import { Text } from "./components/polymorphic/Text"
+
+// import { Button } from "./components/html/button"
 
 // import { Toast } from "./components/templateliterals/Toast"
 
@@ -159,16 +161,30 @@ import { Button } from "./components/html/button"
 
 
 
+// export const App = () => {
+//   return (
+//     <div>
+//       {/* <Toast position="center" /> */}
+//       <Button variants="primary">
+//         Primary Button
+//       </Button>
+//     </div>
+//   );
+// }
+
+
+
 export const App = () => {
   return (
     <div>
-      {/* <Toast position="center" /> */}
-      <Button variants="primary">
-        Primary Button
-      </Button>
+      <Text as="h1" size="sm">Heading</Text>
+      <Text as="p" size="md">Paragraph</Text>
+      <Text as= "label" htmlFor="id" size="md" color="Primary">label</Text>
     </div>
-  );
+  )
 }
+
+
 
 
 
